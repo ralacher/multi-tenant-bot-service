@@ -1,4 +1,4 @@
-# mta-bot-service
+# Multi Tenant Bot Service
 
 Python Microsoft 365 Agents SDK bot hosted on Azure App Service and connected through Azure Bot Service to Microsoft Teams. The bot forwards messages to a Foundry prompt agent by using `azure-ai-projects` (2.x).
 
