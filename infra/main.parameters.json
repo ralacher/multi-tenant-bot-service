@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "namePrefix": {
+      "value": "bot"
+    },
+    "botAppId": {
+      "value": "00000000-0000-0000-0000-000000000000"
+    },
+    "botAppSecret": {
+      "value": "REPLACE_WITH_BOT_APP_SECRET"
+    },
+    "botAppTenantId": {
+      "value": "00000000-0000-0000-0000-000000000000"
+    },
+    "deployBot": {
+      "value": true
+    },
+    "existingAppServicePlanResourceId": {
+      "value": ""
+    },
+    "existingFoundryProjectEndpoint": {
+      "value": ""
+    },
+    "foundryProjectName": {
+      "value": "proj-default"
+    },
+    "foundryModelDeploymentName": {
+      "value": "gpt-5.4"
+    },
+    "foundryModelName": {
+      "value": "gpt-5.4"
+    },
+    "foundryModelVersion": {
+      "value": "2026-03-05"
+    },
+    "foundryModelCapacity": {
+      "value": 10
+    },
+    "deployFoundryModel": {
+      "value": false
+    },
+    "foundryAgentName": {
+      "value": "prompt-agent"
+    },
+    "foundryAgentId": {
+      "value": ""
+    }
+  }
+}

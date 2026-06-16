@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Azure Developer CLI
+.azure/
+
+# Local runtime artifacts
+mta-bot-logs/
+mta-bot-logs-latest/
+webapp-logs/
+webapp-logs.zip
+*.log
+*.zip
+
+# Compiled IaC artifacts
+infra/main.json
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# OS/editor extras
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/

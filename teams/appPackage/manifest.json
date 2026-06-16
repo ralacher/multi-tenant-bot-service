@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.22/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.22",
+  "version": "1.0.1",
+  "id": "${BOT_APP_ID}",
+  "developer": {
+    "name": "Contoso",
+    "websiteUrl": "https://example.com",
+    "privacyUrl": "https://example.com/privacy",
+    "termsOfUseUrl": "https://example.com/terms"
+  },
+  "name": {
+    "short": "Bot",
+    "full": "Foundry Bridge Bot"
+  },
+  "description": {
+    "short": "Teams bot bridged to Foundry prompt agent",
+    "full": "A Microsoft Teams app using Microsoft 365 Agents SDK hosted on Azure App Service and Azure Bot Service, forwarding user prompts to an existing Foundry prompt agent."
+  },
+  "icons": {
+    "outline": "default-outline-icon.png",
+    "color": "default-color-icon.png"
+  },
+  "accentColor": "#005A9C",
+  "bots": [
+    {
+      "botId": "${BOT_APP_ID}",
+      "scopes": [
+        "personal",
+        "team",
+        "groupChat"
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false,
+      "commandLists": [
+        {
+          "scopes": [
+            "personal"
+          ],
+          "commands": [
+            {
+              "title": "help",
+              "description": "Show usage help"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "validDomains": [
+    "${BOT_DOMAIN}"
+  ]
+}

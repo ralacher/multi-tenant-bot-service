@@ -1,0 +1,17 @@
+[project]
+name = "mta-bot-service"
+version = "0.1.0"
+description = "Teams bot bridge using Microsoft 365 Agents SDK and Foundry"
+requires-python = ">=3.11"
+dependencies = [
+  "aiohttp>=3.10.0",
+  "azure-ai-projects>=2.2.0",
+  "azure-identity>=1.17.0",
+  "azure-monitor-opentelemetry>=1.6.0",
+  "microsoft-agents-hosting-aiohttp",
+  "microsoft-agents-authentication-msal",
+  "python-dotenv>=1.0.1"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}

@@ -1,0 +1,11 @@
+name: mta-bot-service
+metadata:
+  template: mta-bot-service-python-teams-foundry@0.0.1
+infra:
+  provider: bicep
+  path: infra
+services:
+  botapp:
+    project: .
+    language: py
+    host: appservice
